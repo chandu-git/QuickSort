@@ -1,7 +1,12 @@
 package quickSort;
 
 public class QuickSort {
-
+	/**
+	 * select a pivot from a list, and then reordering the list 
+	 * so that all of the elements that are smaller than the pivot go to the left, 
+	 * and all of the elements that are larger than the elements go to the right.
+	 * Recursively apply to smaller subsets.
+	 */
 	static void quickSort(int arr[], int left, int right) {
 	      int index = partition(arr, left, right);
 	      if (left < index - 1)
